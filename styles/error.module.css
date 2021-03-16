@@ -23,19 +23,3 @@
 .home {
     text-align: center;
 }
-
-.btn {
-    display: block;
-    width: 200px;
-    padding: 8px 0;
-    margin: 20px 400px;
-    background: #4979ff;
-    color: white;
-    text-align: center;
-    border: 1px solid #4979ff;
-}
-
-.btn:hover {
-    cursor: pointer;
-    border: 1px solid ivory;
-}
