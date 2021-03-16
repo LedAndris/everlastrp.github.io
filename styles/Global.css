@@ -28,6 +28,10 @@ nav a {
     margin-left: 12px;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 nav .logo {
     margin-right: auto;
 }
