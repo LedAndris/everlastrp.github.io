@@ -1,9 +1,4 @@
 bump
-.idea/hamy-os.github.io.iml
-.idea/hamy-os.github.io.iml
-.idea/misc.xml
-.idea/vcs.xml
-.idea/modules.xml
-.idea/hamy-os.github.io.iml
+/.idea
 /.next
 /node_modules
