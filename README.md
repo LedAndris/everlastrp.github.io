@@ -19,7 +19,8 @@ Create a short text of what ELRP is and why you should join.
 Make a discourse forum on the subdomain forum.everlastrp.xyz
 
 ## Error Pages
-Make Error pages, use current website home page as template.
+[x] Make Error pages, use current website home page as template.
+Needs cooler CSS
 
 ## Redo all the CSS
 we need a prettier website, so if you are a profession please feel free!
