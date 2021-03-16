@@ -1,26 +1,18 @@
 .title {
-  color: rgb(255, 255, 255);
-  padding-bottom: 20px;
-  text-align: center;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    text-align: center;
 }
+
 .text {
-  color: rgb(255, 255, 255);
-}
-.btn {
-  display: block;
-  width: 150px;
-  padding: 8px 0;
-  margin: 20px auto;
-  background: #4979ff;
-  border-radius: 4px;
-  color: white;
-  text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 .not-found {
-  text-align: center;
+    text-align: center;
 }
-.not-found a{
-  color: #4979ff;
-  text-decoration: underline;
+
+.not-found a {
+    color: #4979ff;
+    text-decoration: underline;
 }
