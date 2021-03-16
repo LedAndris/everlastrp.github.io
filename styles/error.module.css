@@ -1,5 +1,5 @@
 .four {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 200px;
     text-align: center;
     color: blue;
@@ -8,11 +8,11 @@
 }
 
 .error {
- color: red;
- text-align: center;
- font-size: 50px;
-margin-top: 1px;
-margin-bottom: 1px;
+    color: red;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 .error1 {
@@ -32,4 +32,10 @@ margin-bottom: 1px;
     background: #4979ff;
     color: white;
     text-align: center;
-  }
+    border: 1px solid #4979ff;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 1px solid ivory;
+}

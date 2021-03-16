@@ -3,6 +3,7 @@ import Navbar from "./navbar";
 import {Helmet} from "react-helmet";
 
 const Layout = ({ children }) => {
+                    // wowjesus best coder
     return (
         <div className="content">
             <Helmet>
