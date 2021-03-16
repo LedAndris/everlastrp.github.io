@@ -1,5 +1,4 @@
 import Layout from '../comps/Layout'
-
 import '../styles/Global.css'
 
 

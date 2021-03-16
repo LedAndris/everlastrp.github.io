@@ -26,6 +26,9 @@ nav {
 
 nav a {
     margin-left: 12px;
+    background: -webkit-linear-gradient(#C8323B, #FA0ED2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav a:hover {
@@ -34,6 +37,9 @@ nav a:hover {
 
 nav .logo {
     margin-right: auto;
+    background: -webkit-linear-gradient(#C8323B, #FA0ED2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p {
