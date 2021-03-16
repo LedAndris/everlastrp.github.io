@@ -5,7 +5,5 @@ bump
 .idea/vcs.xml
 .idea/modules.xml
 .idea/hamy-os.github.io.iml
-.next/
-.next
-.next/server/pages-manifest.json
+/.next
 /node_modules
