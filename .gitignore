@@ -3,3 +3,4 @@ bump
 /.vscode
 /.next
 /node_modules
+pages/.env

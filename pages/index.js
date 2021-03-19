@@ -11,6 +11,17 @@ export default function Home() {
       <Link href="https://discord.gg/bDtPpfm3n5">
         <a className={btn}>Join our discord</a>
       </Link>
+      <div id="description">
+        <h1>Why should you join us?</h1>
+        <p>There are Multiple reasons to join ELRP, these include: <br></br></p>
+        <ol>
+          <li> Proffesional Roleplay</li>
+          <li> Fun Community</li>
+          <li> Serious Roleplay</li>
+          <li> Fast Server</li>
+          <p>And much more!</p>
+        </ol>
+      </div>
     </div>
   )
 }
