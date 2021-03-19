@@ -1,6 +1,11 @@
 import styles from '../styles/apply.module.css'
 import {useState} from "react";
-// hooks come here
+
+
+
+
+const application = () => {
+    // hooks come here
 const [email, setEmail] = useState("")
 const [discord, setDiscord] = useState("")
 const [bornLoc, setBornLoc] = useState("")
@@ -9,24 +14,65 @@ const [exp, setExp] = useState("")
 const [rpDesc, setRpDesc] = useState("")
 const[purpose, setPurpose] = useState("")
 const [dep, setDep] = useState("")
+const [scenario, setScenario] = useState("")
+const [showSuccess, setShowSuccess] = useState(false)
+const [showErr, setShowErr] = useState(false)
+
+function Success() {
+    return showSuccess ? <p className={styles.submitted}>Submitted successfully</p> : <p></p>
+}
+
+function Error() {
+    return showErr ? <p className={styles.error}>An error occurred, please contact the developers</p> : <p></p>
+}
 function sendMessage(ev) {
     ev.preventDefault();
-
   var params = {
-    username: "Test",
+    username: "Cunt",
     avatar_url: "",
-    content: "TEST"
+    content: {
+        "embeds": [{
+          "title": `@${discord} submitted a new registration`,
+          "description": `Timestamp: ${new Date()}`,
+          "fields": [{
+              "name": "Email",
+              "value": email
+          }, {
+            "name": "Birth",
+            "value": bornLoc
+          }, {
+            "name": "Player description",
+            "value": desc
+          }, {
+            "name": "Rp experience",
+            "value": rpDesc
+          }, {
+            "name": "Purpose",
+            "value": purpose
+          }, {
+            "name": "Department",
+            "value": dep
+          },{
+            "name": "Scenario",
+            "value": scenario
+          },]
+        }]
+      }
   }
-  fetch(process.env.webhook, {
+  fetch(process.env.WEBHOOK_URL, {
       method: 'POST',
       headers: {'Content-type': 'application/json'},
       body: JSON.stringify(params)
+  }).then(resp => resp.json()).then(resp => {
+      setShowSuccess(true)
+  }).catch(err => {
+      setShowErr(true)
   })
 }
-
-const application = () => {
   return (
     <div className={styles.div}>
+              <Success/>
+              <Error/>
     <form>
       <label htmlFor="name">Email address</label>
       <input className={styles.inputtext} id="name" name="name" type="text" autoComplete="name" required onChange={(e) => {setEmail(e.target.value)}} />
@@ -53,8 +99,8 @@ const application = () => {
       <input className={styles.inputtext}  id="name" name="name" type="text" autoComplete="name" required onChange={(e) => {setDep(e.target.value)}}/>
 
       <label htmlFor="name">Please give a detailed description of a roleplay scene you could bring</label>
-      <input className={styles.inputtext}  id="name" name="name" type="text" autoComplete="name" required />
-      <button onclick="sendMessage()">Apply!</button>
+      <input className={styles.inputtext}  id="name" name="name" type="text" autoComplete="name" required onChange={(e) => {setScenario(e.target.value)}}/>
+      <button onClick={sendMessage}>Apply!</button>
     </form>
     </div>
   )
