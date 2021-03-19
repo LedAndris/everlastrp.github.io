@@ -63,7 +63,7 @@ function sendMessage(ev) {
       method: 'POST',
       headers: {'Content-type': 'application/json'},
       body: JSON.stringify(params)
-  }).then(resp => resp.json()).then(resp => {
+  }).then(resp => {
       setShowSuccess(true)
   }).catch(err => {
       setShowErr(true)
