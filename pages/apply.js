@@ -30,8 +30,8 @@ function sendMessage(ev) {
   var params = {
     username: "Cunt",
     avatar_url: "",
-    content: {
-        "embeds": [{
+    content: "Registration submitted", 
+    embeds: [{
           "title": `@${discord} submitted a new registration`,
           "description": `Timestamp: ${new Date()}`,
           "fields": [{
@@ -57,7 +57,7 @@ function sendMessage(ev) {
             "value": scenario
           },]
         }]
-      }
+      
   }
   fetch(process.env.WEBHOOK_URL, {
       method: 'POST',
