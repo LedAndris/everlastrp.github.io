@@ -59,7 +59,7 @@ function sendMessage(ev) {
         }]
       
   }
-  fetch(process.env.WEBHOOK_URL, {
+  fetch(`/api/apply`, {
       method: 'POST',
       headers: {'Content-type': 'application/json'},
       body: JSON.stringify(params)
